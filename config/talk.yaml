@@ -1,9 +1,15 @@
 name: talk
 backend: whisper
 parameters:
-  model: bins/ggml-tiny.en.bin
+  # Fow very low spec systems, i.e. raspberry
+  # model: bins/ggml-tiny.en.bin
+  model: bins/ggml-small.en.bin
 language: en
+# download_files:
+#   - filename: bins/ggml-tiny.en.bin
+#     path: binaries 
+#     uri: https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.en.bin
 download_files:
-  - filename: bins/ggml-tiny.en.bin
+  - filename: bins/ggml-small.en.bin
     path: binaries 
-    uri: https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.en.bin
+    uri: https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.en.bin 
