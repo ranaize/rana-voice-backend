@@ -1,7 +1,8 @@
 name: command
 backend: llama-cpp
 parameters:
-  model: bins/Qwen3-4B-Instruct-Q4_K_M.gguf
+  # model: bins/Qwen3-4B-Q4_K_M.gguf
+  model: bins/Qwen3-1.7B-Q4_K_M.gguf
   context_size: 2048
   threads: 4
   temperature: 0.0
@@ -9,6 +10,9 @@ parameters:
   response_format:
     type: json_object
 download_files:
-  - filename: bins/Qwen3-4B-Instruct-Q4_K_M.gguf
+  # - filename: bins/Qwen3-4B-Q4_K_M.gguf
+  #   path: binaries 
+  #   uri: https://huggingface.co/ggml-org/Qwen3-4B-GGUF/resolve/main/Qwen3-4B-Q4_K_M.gguf
+  - filename: bins/Qwen3-1.7B-Q4_K_M.gguf
     path: binaries 
-    uri: https://huggingface.co/ggml-org/Qwen3-4B-GGUF/resolve/main/Qwen3-4B-Q4_K_M.gguf
+    uri: https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF/resolve/main/Qwen3-1.7B-Q4_K_M.gguf
